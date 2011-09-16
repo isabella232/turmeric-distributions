@@ -1,0 +1,76 @@
+= Turmeric Distributions =
+
+The Turmeric SOA framework and runtime consists of many parts that make up a working system.  This project
+consists of a way to build a complete application server and also user acceptance tests for the system.
+
+The directory structure is made up of the following modules:
+
+* wars - example or pre-packaged wars for various services.
+* apps-server - pre configured application servers with the turmeric-runtime and other services already deployed.
+* user-acceptance-tests - a set of user accepantance tests that the project uses to verify the integration of the system.
+
+=Building the Distributions =
+
+* Java 1.6
+* Maven 3.0 or greater installed.
+
+You will need a copy of the settings.xml available or installed in your .m2 directory.  This contains the necessary
+remote repositories already pre-configured, and will pull artifacts from eBay Open Source's Nexus repository.
+
+After that, just run:
+
+{{{mvn clean install}}
+
+The binaries will be available in the target directory for the particular project.
+
+=What's Included?=
+
+By default the jetty-turmeric distribution contains the following:
+
+* Jetty 7.4.5 or higher
+* Turmeric Runtime 1.0.0 or higher
+* An Example Echo Service
+* Apache Derby 10.8 or higher.
+
+By default Monitoring of services is currently not enabled.  This can be changed by modifying the GlobalServiceConfig.xml
+file which resides in:
+
+{{{resources/META-INF/soa/services/config}}}
+
+All services that are deployed to the webapps directory will share a common runtime and GlobalConfiguration.
+
+=Great! How do I run this?==
+
+Just unzip the jetty-turmeric distribution to a directory.  By default the port it uses is 8080.  If you need to change this
+port, edit the etc/jetty.xml file, and change the defaultPort attribute to something else.
+
+Next you can start jetty by entering at the command prompt in the jetty-turmeric directory:
+
+{{{java -jar start.jar}}}
+
+=Testing=
+
+A sample echoservice has been included.  This can be tested the following ways.
+
+# Make sure the Service has been deployed and the application server is running.
+# To make a RESTful call using Name/Value pairs and return a response using XML, cut and paste the following url into your browser's URL input and press enter.
+{{{http://localhost:8082/echoservice-example/ExampleEchoServiceV1?echo&echoText=hello}}}
+Sample response:
+{{{<echoResponse>
+  <ack>Success</ack>
+  <output>echo</output>
+</echoResponse>}}}
+# To make a RESTful call using Name/Value pairs and return a response using JSON, cut and paste the following URL into your browser and press enter.
+{{{http://localhost:8082/echoservice-example/ExampleEchoServiceV1?echo&echoText=hello&format=XML}}}
+Sample response:
+{{{
+{"echoResponse":[{"ack":["Success"],"output":["echo"]}]}
+}}}
+#To make a RESTful call using Name/Value pairs and return a response using NV, cut and paste the following URL into your browser and press enter.
+{{{http://localhost:8082/echoservice-example/ExampleEchoServiceV1?echo&echoText=hello&format=NV}}}
+Sample response:
+{{{ack(0)="Success"&output(0)="echo"}}}
+The above format is using the URL Mapping options to set the X-TURMERIC-OPERATION-NAME and X-TURMERIC-RESPONSE-DATA-FORMAT header entries. With out this special configuration, the format of the call would be:
+[http://localhost:8082/echoservice-example/ExampleEchoServiceV1?X-TURMERIC-OPERATION-NAME=echo&X-TURMERIC-RESPONSE-DATA-FORMAT=XML&echoText=hello]
+By leveraging the mapping options you can construct any REST style url you want for making the call.
+
