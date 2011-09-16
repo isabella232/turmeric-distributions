@@ -19,7 +19,7 @@ remote repositories already pre-configured, and will pull artifacts from eBay Op
 
 After that, just run:
 
-{{{mvn clean install}}
+{{{mvn clean install}}}
 
 The binaries will be available in the target directory for the particular project.
 
