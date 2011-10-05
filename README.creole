@@ -54,14 +54,14 @@ A sample echoservice has been included.  This can be tested the following ways.
 
 # Make sure the Service has been deployed and the application server is running.
 # To make a RESTful call using Name/Value pairs and return a response using XML, cut and paste the following url into your browser's URL input and press enter.
-{{{http://localhost:8082/echoservice-example/ExampleEchoServiceV1?echo&echoText=hello}}}
+{{{http://localhost:8080/example-echoservice/ExampleEchoServiceV1?echo&echoText=hello}}}
 Sample response:
 {{{<echoResponse>
   <ack>Success</ack>
   <output>echo</output>
 </echoResponse>}}}
 # To make a RESTful call using Name/Value pairs and return a response using JSON, cut and paste the following URL into your browser and press enter.
-{{{http://localhost:8082/echoservice-example/ExampleEchoServiceV1?echo&echoText=hello&format=XML}}}
+{{{http://localhost:8080/example-echoservice/ExampleEchoServiceV1?echo&echoText=hello&format=XML}}}
 Sample response:
 {{{
 {"echoResponse":[{"ack":["Success"],"output":["echo"]}]}
