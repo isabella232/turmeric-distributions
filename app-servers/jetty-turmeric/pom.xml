@@ -245,6 +245,12 @@
                            <outputDirectory>${assembly-directory}/lib/turmericsoa</outputDirectory>
                         </artifactItem>
                         <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.security</groupId>
+                           <artifactId>SecurityCommon</artifactId>
+                           <version>1.0.0</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
                            <groupId>org.apache.neethi</groupId>
                            <artifactId>neethi</artifactId>
                            <version>2.0.4</version>
