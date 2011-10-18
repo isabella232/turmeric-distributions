@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <global-service-config xmlns="http://www.ebayopensource.org/turmeric/common/config">
 <!-- Uncomment the following to enable metrics.  You will need to make sure the appropriate provider jar is in lib/turmericsoa -->
-<!--    <monitor-config>
-        <storage-provider name="DAOMetricsStorageProvider">
-            <class-name>org.ebayopensource.turmeric.monitoring.storage.DAOMetricsStorageProvider</class-name>
-            <storage-options>
-                <option name="persistenceUnitName">metrics</option>
-                <option name="metricsDAOClassName">org.ebayopensource.turmeric.monitoring.MetricsDAOImpl</option>
-                <option name="storeServiceMetrics">false</option>
-            </storage-options>
-        </storage-provider>
-        <snapshot-interval>60</snapshot-interval>
-    </monitor-config>
--->
+<!-- 
+	<monitor-config>
+		<storage-provider name="DAOMetricsStorageProvider">
+			<class-name>org.ebayopensource.turmeric.monitoring.cassandra.storage.provider.CassandraMetricsStorageProvider
+			</class-name>
+			<storage-options>
+				<option name="storeServiceMetrics">false</option>
+				<option name="host-address">127.0.0.1</option>
+				<option name="keyspace-name">TurmericMonitoring</option>
+				<option name="cluster-name">Test Cluster</option>
+				<option name="embedded">true</option>
+			</storage-options>
+		</storage-provider>
+		<snapshot-interval>60</snapshot-interval>
+	</monitor-config>
+ -->
     <service-config-groups>
         <service-group name="CommonSOAServiceGroup">
             <service-config>
@@ -39,7 +43,7 @@
 							 <options>
 							</options>
                     </logging-handler>
-<!-- Uncomment the following to enable metrics.  You will need to make sure the appropriate provider jar is in lib/turmericsoa -->
+<!-- Uncomment the following to enable error metrics using the jpa error logging handler.  You will need to make sure the appropriate provider jar is in lib/turmericsoa -->
 <!--                     
                     <logging-handler>
                         <class-name>org.ebayopensource.turmeric.runtime.error.DAOErrorLoggingHandler</class-name>
@@ -49,6 +53,20 @@
                         </options>
                     </logging-handler>
 -->
+<!-- Uncomment the following to enable error metrics using the cassandra error logging handler. You will need to make 
+						sure the appropriate provider jar is in lib/turmericsoa -->
+				    <!-- 
+					<logging-handler>
+						<class-name>org.ebayopensource.turmeric.runtime.error.cassandra.handler.CassandraErrorLoggingHandler
+						</class-name>
+						<options>
+							<option name="host-address">127.0.0.1</option>
+							<option name="keyspace-name">TurmericMonitoring</option>
+							<option name="cluster-name">Test Cluster</option>
+							<option name="embedded">true</option>
+						</options>
+					</logging-handler>
+					 -->
                 </pipeline-config>
                 <protocol-processor name="SOAP11" version="1.1">
                     <indicator>
@@ -138,6 +156,20 @@
                         </options>
                     </logging-handler>
 -->
+<!-- Uncomment the following to enable error metrics using the cassandra error logging handler. You will need to make 
+						sure the appropriate provider jar is in lib/turmericsoa -->
+				    <!-- 
+					<logging-handler>
+						<class-name>org.ebayopensource.turmeric.runtime.error.cassandra.handler.CassandraErrorLoggingHandler
+						</class-name>
+						<options>
+							<option name="host-address">127.0.0.1</option>
+							<option name="keyspace-name">TurmericMonitoring</option>
+							<option name="cluster-name">Test Cluster</option>
+							<option name="embedded">true</option>
+						</options>
+					</logging-handler>
+					 -->
                 </pipeline-config>
                 <protocol-processor name="SOAP11" version="1.1">
                     <indicator>
@@ -227,6 +259,20 @@
                         </options>
                     </logging-handler>
 -->
+<!-- Uncomment the following to enable error metrics using the cassandra error logging handler. You will need to make 
+						sure the appropriate provider jar is in lib/turmericsoa -->
+				    <!-- 
+					<logging-handler>
+						<class-name>org.ebayopensource.turmeric.runtime.error.cassandra.handler.CassandraErrorLoggingHandler
+						</class-name>
+						<options>
+							<option name="host-address">127.0.0.1</option>
+							<option name="keyspace-name">TurmericMonitoring</option>
+							<option name="cluster-name">Test Cluster</option>
+							<option name="embedded">true</option>
+						</options>
+					</logging-handler>
+					 -->
                 </pipeline-config>
                 <protocol-processor name="SOAP11" version="1.1">
                     <indicator>
