@@ -481,6 +481,93 @@
                            <version>1.1.1</version>
                            <outputDirectory>${assembly-directory}/lib/turmericsoa</outputDirectory>
                         </artifactItem>
+                        
+                        <!-- Security Common -->
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.security</groupId>
+                           <artifactId>SecurityCommon</artifactId>
+                           <version>1.0.0</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.client</groupId>
+                           <artifactId>RateLimiterServiceConsumer</artifactId>
+                           <version>1.0.1.0-SNAPSHOT</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.errorlib</groupId>
+                           <artifactId>RateLimiterErrorLibrary</artifactId>
+                           <version>1.0.1.0-SNAPSHOT</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.intf</groupId>
+                           <artifactId>RateLimiterService</artifactId>
+                           <version>1.0.1.0-SNAPSHOT</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.client</groupId>
+                           <artifactId>AuthenticationServiceConsumer</artifactId>
+                           <version>1.0.0</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.intf</groupId>
+                           <artifactId>AuthenticationService</artifactId>
+                           <version>1.0.0</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.client</groupId>
+                           <artifactId>AuthorizationServiceConsumer</artifactId>
+                           <version>1.0.0</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.intf</groupId>
+                           <artifactId>AuthorizationService</artifactId>
+                           <version>1.0.0</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.client</groupId>
+                           <artifactId>PolicyEnforcementConsumer</artifactId>
+                           <version>1.0.0</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.intf</groupId>
+                           <artifactId>PolicyEnforcementService</artifactId>
+                           <version>1.0.0</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.client</groupId>
+                           <artifactId>GroupMembershipServiceConsumer</artifactId>
+                           <version>1.0.1.0-SNAPSHOT</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.intf</groupId>
+                           <artifactId>GroupMembershipService</artifactId>
+                           <version>1.0.1.0-SNAPSHOT</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.client</groupId>
+                           <artifactId>PolicyServiceConsumer</artifactId>
+                           <version>1.0.0.4-SNAPSHOT</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.intf</groupId>
+                           <artifactId>PolicyService</artifactId>
+                           <version>1.0.0.4-SNAPSHOT</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+                       
                         <!-- Hibernate -->
                         <artifactItem>
                            <groupId>org.hibernate</groupId>
