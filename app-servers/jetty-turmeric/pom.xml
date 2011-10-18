@@ -482,9 +482,9 @@
                            <outputDirectory>${assembly-directory}/lib/turmericsoa</outputDirectory>
                         </artifactItem>
                         <artifactItem>
-                            <groupId>com.google.collections</groupId>
-                            <artifactId>google-collections</artifactId>
-                            <version>1.0</version>                           
+                           <groupId>com.google.collections</groupId>
+                           <artifactId>google-collections</artifactId>
+                           <version>1.0</version>
                         </artifactItem>
 
                         <!-- Security Common -->
@@ -587,9 +587,9 @@
                            <outputDirectory>${assembly-directory}/lib/hibernate</outputDirectory>
                         </artifactItem>
                         <artifactItem>
-                            <groupId>com.google.collections</groupId>
-                            <artifactId>google-collections</artifactId>
-                            <version>1.0</version>                           
+                           <groupId>com.google.guava</groupId>
+                           <artifactId>guava</artifactId>
+                           <version>10.0.1</version>
                            <outputDirectory>${assembly-directory}/lib/hibernate</outputDirectory>
                         </artifactItem>
                         <artifactItem>
