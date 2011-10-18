@@ -481,7 +481,7 @@
                            <version>1.1.1</version>
                            <outputDirectory>${assembly-directory}/lib/turmericsoa</outputDirectory>
                         </artifactItem>
-                        
+
                         <!-- Security Common -->
                         <artifactItem>
                            <groupId>org.ebayopensource.turmeric.security</groupId>
@@ -567,8 +567,26 @@
                            <version>1.0.0.4-SNAPSHOT</version>
                            <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
                         </artifactItem>
-                       
+                        <artifactItem>
+                           <groupId>org.ebayopensource.turmeric.ratelimiter</groupId>
+                           <artifactId>RateLimiterCounterProvider</artifactId>
+                           <version>1.0.1.0-SNAPSHOT</version>
+                           <outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
+                        </artifactItem>
+
                         <!-- Hibernate -->
+                        <artifactItem>
+                           <groupId>com.jolbox</groupId>
+                           <artifactId>bonecp</artifactId>
+                           <version>0.7.1.RELEASE</version>
+                           <outputDirectory>${assembly-directory}/lib/hibernate</outputDirectory>
+                        </artifactItem>
+                        <artifactItem>
+                           <groupId>com.jolbox</groupId>
+                           <artifactId>bonecp-provider</artifactId>
+                           <version>0.7.1.RELEASE</version>
+                           <outputDirectory>${assembly-directory}/lib/hibernate</outputDirectory>
+                        </artifactItem>
                         <artifactItem>
                            <groupId>org.hibernate</groupId>
                            <artifactId>hibernate-core</artifactId>
