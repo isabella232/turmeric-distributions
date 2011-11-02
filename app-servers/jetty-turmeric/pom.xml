@@ -486,7 +486,7 @@
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.utils</groupId>
 									<artifactId>TurmericUtils</artifactId>
-									<version>1.0.0.turmeric-SNAPSHOT</version>
+									<version>1.0.0.1-SNAPSHOT</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa</outputDirectory>
 								</artifactItem>
 								<artifactItem>

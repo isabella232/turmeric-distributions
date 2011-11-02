@@ -9,7 +9,7 @@
 
  -->
 <metrics-query-service-provider-config xmlns="http://www.ebayopensource.org/turmeric/services/logging/v1/config">
-	<default>turmeric-cassandra</default>
+	<default>turmeric-jpa</default>
 	<provider-config-list>
 		<provider-config>
 			<name>eBay</name>

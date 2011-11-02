@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <global-service-config xmlns="http://www.ebayopensource.org/turmeric/common/config">
-<!-- Uncomment the following to enable metrics.  You will need to make sure the appropriate provider jar is in lib/turmericsoa -->
+<!-- Uncomment the following to enable metrics stored in cassandra.  You will need to make sure the appropriate provider jar is in lib/turmericsoa -->
 <!-- 
 	<monitor-config>
 		<storage-provider name="DAOMetricsStorageProvider">
@@ -17,6 +17,20 @@
 		<snapshot-interval>60</snapshot-interval>
 	</monitor-config>
  -->
+ <!-- Uncomment the following to enable metrics stored in jpa.  You will need to make sure the appropriate provider jar is in lib/turmericsoa -->
+<!-- 
+ <monitor-config>
+        <storage-provider name="DAOMetricsStorageProvider">
+            <class-name>org.ebayopensource.turmeric.monitoring.storage.DAOMetricsStorageProvider</class-name>
+            <storage-options>
+                <option name="persistenceUnitName">metrics</option>
+                <option name="metricsDAOClassName">org.ebayopensource.turmeric.monitoring.MetricsDAOImpl</option>
+                <option name="storeServiceMetrics">false</option>
+            </storage-options>
+        </storage-provider>
+        <snapshot-interval>60</snapshot-interval>
+    </monitor-config>
+-->
     <service-config-groups>
         <service-group name="CommonSOAServiceGroup">
             <service-config>
