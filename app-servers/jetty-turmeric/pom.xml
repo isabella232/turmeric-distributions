@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.ebayopensource.turmeric.distribution</groupId>
 		<artifactId>turmeric-distribution-appservers-parent</artifactId>
-		<version>1.0.1.0-SNAPSHOT</version>
+		<version>1.1.0</version>
 	</parent>
 	<artifactId>jetty-turmeric</artifactId>
 	<name>Turmeric :: Distribution :: Jetty Distribution</name>
@@ -845,13 +844,11 @@
 								<echo>Copying jetty-distribution-${jetty-version} into
 									${assembly-directory}...</echo>
 								<copy todir="${assembly-directory}">
-									<fileset
-										dir="${root-dist-directory}/jetty-distribution-${jetty-version}">
+									<fileset dir="${root-dist-directory}/jetty-distribution-${jetty-version}">
 										<include name="**/*" />
 									</fileset>
 								</copy>
-								<chmod dir="${assembly-directory}/bin" perm="755"
-									includes="**/*.sh" />
+								<chmod dir="${assembly-directory}/bin" perm="755" includes="**/*.sh" />
 							</tasks>
 						</configuration>
 					</execution>
@@ -867,15 +864,10 @@
 						<phase>process-resources</phase>
 						<configuration>
 							<tasks>
-								<patch dir="${assembly-directory}/contexts/test.d"
-									patchfile="src/main/patches/overridexml.patch"
-									ignorewhitespace="true" strip="0" failonerror="false" />
-								<patch dir="${assembly-directory}/contexts" patchfile="src/main/patches/testContextPath.patch"
-									ignorewhitespace="true" strip="0" failonerror="false" />
-								<patch dir="${assembly-directory}/etc" patchfile="src/main/patches/rewritexml.patch"
-									ignorewhitespace="true" strip="0" failonerror="false" />
-								<patch dir="${assembly-directory}/" patchfile="src/main/patches/startini.patch"
-									ignorewhitespace="true" strip="0" failonerror="false" />
+								<patch dir="${assembly-directory}/contexts/test.d" patchfile="src/main/patches/overridexml.patch" ignorewhitespace="true" strip="0" failonerror="false" />
+								<patch dir="${assembly-directory}/contexts" patchfile="src/main/patches/testContextPath.patch" ignorewhitespace="true" strip="0" failonerror="false" />
+								<patch dir="${assembly-directory}/etc" patchfile="src/main/patches/rewritexml.patch" ignorewhitespace="true" strip="0" failonerror="false" />
+								<patch dir="${assembly-directory}/" patchfile="src/main/patches/startini.patch" ignorewhitespace="true" strip="0" failonerror="false" />
 							</tasks>
 						</configuration>
 						<goals>
