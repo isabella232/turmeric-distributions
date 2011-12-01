@@ -553,43 +553,43 @@
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.client</groupId>
 									<artifactId>PolicyEnforcementConsumer</artifactId>
-									<version>1.0.0</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.intf</groupId>
 									<artifactId>PolicyEnforcementService</artifactId>
-									<version>1.0.0</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.client</groupId>
 									<artifactId>GroupMembershipServiceConsumer</artifactId>
-									<version>1.0.1.0-SNAPSHOT</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.intf</groupId>
 									<artifactId>GroupMembershipService</artifactId>
-									<version>1.0.1.0-SNAPSHOT</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.client</groupId>
 									<artifactId>PolicyServiceConsumer</artifactId>
-									<version>1.0.0.4-SNAPSHOT</version>
+									<version>${turmeric-policy-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.intf</groupId>
 									<artifactId>PolicyService</artifactId>
-									<version>1.0.0.4-SNAPSHOT</version>
+									<version>${turmeric-policy-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.ratelimiter</groupId>
 									<artifactId>RateLimiterCounterProvider</artifactId>
-									<version>1.0.1.0-SNAPSHOT</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 
@@ -671,7 +671,7 @@
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.utils</groupId>
 									<artifactId>turmeric-utils-cassandra</artifactId>
-									<version>1.0.0.1-SNAPSHOT</version>
+									<version>${turmeric-cassandra-utils-version}</version>
 									<outputDirectory>${assembly-directory}/lib/cassandra</outputDirectory>
 								</artifactItem>
 								<artifactItem>
@@ -815,13 +815,13 @@
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.monitoring</groupId>
 									<artifactId>turmeric-monitoring-cassandra-storage-provider</artifactId>
-									<version>1.0.0.4-SNAPSHOT</version>
+									<version>${turmeric-monitoring-version}</version>
 									<outputDirectory>${assembly-directory}/lib/cassandra</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.runtime</groupId>
 									<artifactId>logging-handler-cassandra</artifactId>
-									<version>1.0.1.0-SNAPSHOT</version>
+									<version>${turmeric-runtime-version}</version>
 									<outputDirectory>${assembly-directory}/lib/cassandra</outputDirectory>
 								</artifactItem>
 							</artifactItems>
