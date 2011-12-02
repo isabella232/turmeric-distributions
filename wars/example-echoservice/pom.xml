@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>org.ebayopensource.turmeric.distribution</groupId>
 		<artifactId>turmeric-distribution-wars-parent</artifactId>
-		<version>1.1.0</version>
+		<version>1.1.0.1-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>echoservice-example</artifactId>
