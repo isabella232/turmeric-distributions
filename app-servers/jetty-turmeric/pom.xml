@@ -61,9 +61,9 @@
 								</artifactItem>
 								<!-- update this section to deploy the demo-echo-service war -->
 								<artifactItem>
-									<groupId>org.ebayopensource.turmeric.runtime</groupId>
+									<groupId>org.ebayopensource.turmeric.distribution</groupId>
 									<artifactId>echoservice-example</artifactId>
-									<version>1.0.1.0-SNAPSHOT</version>
+									<version>${project.version}</version>
 									<type>war</type>
 									<overWrite>true</overWrite>
 									<includes>**</includes>
@@ -485,7 +485,7 @@
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.utils</groupId>
 									<artifactId>TurmericUtils</artifactId>
-									<version>1.0.0.1-SNAPSHOT</version>
+									<version>${turmeric-runtime-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa</outputDirectory>
 								</artifactItem>
 								<artifactItem>
@@ -510,43 +510,43 @@
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.client</groupId>
 									<artifactId>RateLimiterServiceConsumer</artifactId>
-									<version>1.0.1.0-SNAPSHOT</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.errorlib</groupId>
 									<artifactId>RateLimiterErrorLibrary</artifactId>
-									<version>1.0.1.0-SNAPSHOT</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.intf</groupId>
 									<artifactId>RateLimiterService</artifactId>
-									<version>1.0.1.0-SNAPSHOT</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.client</groupId>
 									<artifactId>AuthenticationServiceConsumer</artifactId>
-									<version>1.0.0</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.intf</groupId>
 									<artifactId>AuthenticationService</artifactId>
-									<version>1.0.0</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.client</groupId>
 									<artifactId>AuthorizationServiceConsumer</artifactId>
-									<version>1.0.0</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.ebayopensource.turmeric.intf</groupId>
 									<artifactId>AuthorizationService</artifactId>
-									<version>1.0.0</version>
+									<version>${turmeric-security-version}</version>
 									<outputDirectory>${assembly-directory}/lib/turmericsoa-security</outputDirectory>
 								</artifactItem>
 								<artifactItem>
