@@ -14,10 +14,7 @@ The directory structure is made up of the following modules:
 * Java 1.6
 * Maven 3.0 or greater installed.
 
-You will need a copy of the settings.xml available or installed in your .m2 directory.  This contains the necessary
-remote repositories already pre-configured, and will pull artifacts from eBay Open Source's Nexus repository.
-
-After that, just run:
+Just run:
 
 {{{mvn clean install}}}
 
